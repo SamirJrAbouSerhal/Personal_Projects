@@ -1,0 +1,10 @@
+﻿Name,Quantity,Component
+U1,1, Arduino Uno R3
+U2,1, LCD 16 x 2
+Rpot1,1,10 kΩ Potentiometer
+M1,1, Vibration Motor
+DIST1,1, Ultrasonic Distance Sensor (4-pin)
+D1,1,Red LED
+D2,1,Yellow LED
+D3,1,Green LED
+"R1, R2, R3",3,220 Ω Resistor
