@@ -3,7 +3,7 @@
 
 //initializing pin numbers and logic variables
 int button = 12;
-int led = 7;
+int led = 13;
 int low = 8;
 int med = 9;
 int high = 10;
