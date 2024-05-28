@@ -1,0 +1,7 @@
+﻿Name,Quantity,Component
+U1,1, Arduino Uno R3
+M1,1, DC Motor
+U2,1, H-bridge Motor Driver
+"S1, S2, S3, S4",4, Pushbutton
+R1,1,220 Ω Resistor
+D1,1,Green LED
