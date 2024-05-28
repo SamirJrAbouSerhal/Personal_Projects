@@ -1,9 +1,8 @@
-//librarys used
 #define ENABLE 5
 #define DIR 3
 
 //initializing pin numbers and logic variables
-int button = 6;
+int button = 12;
 int led = 7;
 int low = 8;
 int med = 9;
