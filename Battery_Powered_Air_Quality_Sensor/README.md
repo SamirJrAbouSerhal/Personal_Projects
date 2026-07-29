@@ -1,15 +1,53 @@
-# Hi, I'm Samir
+# Portable Air Quality Sensor
 
-I'm currently studying physics and electrical engineering and enjoy designing and building hardware and software projects that combine engineering, electronics, and programming.
+A compact, battery-powered air quality sensor built around the **ESP32-C3-MINI-1**. The device is designed to monitor indoor air quality and publish sensor data over **MQTT**, making it easy to integrate with smart home platforms such as Home Assistant.
 
-This repository documents my journey as I learn and develop skills in:
+> **Note:** This project is currently hardware-only. The PCB has been designed but has not been assembled yet.
 
-* PCB Design
-* 3D Design & CAD
-* Embedded Systems
-* Programming
+## Features
 
-My goal is to continuously improve through hands-on projects, documenting both my successes and the lessons learned along the way. Each project serves as an opportunity to explore new concepts, refine my workflow, and build practical engineering experience.
+* ESP32-C3-MINI-1 microcontroller
+* ENS160 air quality sensor
+* SHT41 temperature and humidity sensor
+* MQTT support for smart home integration
+* USB-C power input
+* Li-ion battery operation with onboard charging and power-path management
+* Four-layer PCB designed for compact SMT assembly
 
-Thanks for stopping by!
-If you want to reach me, feel free to do so by emailing me at sabouserhal@gmail.com
+## Hardware Overview
+
+### Power System
+
+* **USB-C** 5V input
+* **BQ25185** battery charger and power-path management IC
+* Designed for a single **3.7V Li-ion** cell
+* Power rails:
+
+  * 5V (USB)
+  * 3.3V via **SGM2212**
+  * 1.8V via **AMS1117-1.8**
+
+### Sensors
+
+Both sensors communicate over the I²C bus:
+
+* **ENS160** – Indoor air quality (VOC/eCO₂)
+* **SHT41** – Temperature and humidity
+
+## PCB
+
+The board is a **4-layer SMT design** with the following stack-up:
+
+1. Top signal layer
+2. Solid ground plane
+3. Power / ground plane
+4. Bottom signal layer
+
+This layout was chosen to improve signal integrity, power distribution, and overall EMC performance while keeping the board compact.
+
+## Repository Contents
+
+* PCB design files
+* Schematics
+* Manufacturing files (Gerbers)
+* Bill of Materials (BOM)
